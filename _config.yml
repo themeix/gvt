@@ -1,0 +1,30 @@
+####################################################
+#
+# Welcome to Shane Jekyll Theme
+# Author Link : https://themeix.com/
+# Version : v1.0.0
+#
+####################################################
+
+# Site settings
+
+title: GOV.UK  
+author: Renegatus
+email: renegatus@renegatus.com
+description: Write an awesome description for your new site here.
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+collections:
+  authors:
+    output: true
+    permalink: /author/:path/
+
+feed:
+  collections:
+    posts:
+      path: "/index.xml"

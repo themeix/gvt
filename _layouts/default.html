@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" class="govuk-template ">
+  <head>
+    <meta charset="utf-8" />
+
+    {% if page.title and page.url != "/" %}
+    <title>{{ page.title }} - {{ site.title }}</title>
+    {% else %}
+    <title>{{ site.title | default: "GOV.UK" }}</title>
+    {% endif %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0b0c0c">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">  
+   
+    <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="{{ "/assets/images/favicon.ico" | relative_url }}" type="image/x-icon">
+    <link rel="mask-icon" href="{{ "/assets/images/govuk-mask-icon.svg" | relative_url }}" color="#0b0c0c">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ "/assets/images/govuk-apple-touch-icon-180x180.png" | relative_url }}">
+    <link rel="apple-touch-icon" sizes="167x167" href="{{ "/assets/images/govuk-apple-touch-icon-167x167.png" | relative_url }}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ "/assets/images/govuk-apple-touch-icon-152x152.png" | relative_url }}">
+    <link rel="apple-touch-icon" href="{{ "/assets/images/govuk-apple-touch-icon.png" | relative_url }}">
+  
+    <link rel="stylesheet" media="screen" href="{{ "/assets/main.css" | relative_url }}"/>
+ 
+    <meta property="og:image" content="{{ "/assets/images/govuk-opengraph-image.png" | relative_url }}">
+
+  </head>
+
+  <body class="govuk-template__body ">
+    <script>
+      document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
+  
+    </script>
+
+<a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+
+
+ 
+
+    {% include header.html %}
+ 
+
+    <div id="global-header-bar"></div>
+
+    {{ content }}
+
+    {% include footer.html %}
+
+  </body>
+</html>

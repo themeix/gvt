@@ -1,0 +1,7 @@
+.govuk-link:hover, .app-prose-scope a:hover, .govuk-back-link:hover, .govuk-footer__link:hover {
+    text-decoration-thickness: max(3px, 3px, 1.92px);
+    -webkit-text-decoration-skip-ink: none;
+    text-decoration-skip-ink: none;
+    -webkit-text-decoration-skip: none;
+    text-decoration-skip: none;
+}

@@ -1,0 +1,16 @@
+{
+  "name": "govuk-jekyll-theme-build",
+  "version": "0.0.1",
+  "description": "",
+  "author": "",
+  "engines": {
+    "node": "~8.9.1",
+    "npm": "~5.6.0"
+  },
+  "devDependencies": {
+    "govuk_frontend_toolkit": "~9.0.1",
+    "govuk-elements-sass": "~3.1.3",
+    "govuk_template_jinja": "~0.23.0",
+    "govuk-frontend": "~3.13.0"
+  }
+}
